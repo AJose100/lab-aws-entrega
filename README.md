@@ -60,7 +60,7 @@ Este laboratório demonstra a criação manual de uma infraestrutura completa na
 | **Internet Gateway** | `igw-lab` | Anexado à VPC |
 | **Tabela de Rotas** | `rtb-public-lab` | 0.0.0.0/0 → IGW |
 | **Security Group** | `sg-ssh-lab` | Porta 22 liberada (meu IP) |
-| **Instância EC2** | `ec2-lab-server` | Amazon Linux 2, t2.micro |
+| **Instância EC2** | `ec2-lab-server` | Amazon Linux 2023, **t3.micro** |
 
 ---
 
@@ -82,7 +82,7 @@ Este laboratório demonstra a criação manual de uma infraestrutura completa na
 ![EC2 Running](05-ec2-running.png)
 
 ### 6. Acesso SSH Funcionando
-![SSH Access](      .png)
+![SSH Access](06-ssh-access.png)
 
 ---
 
@@ -115,6 +115,8 @@ Configuração de segurança com Security Group
 Implantação e acesso a uma instância EC2
 
 Status: APROVADO ✓
+
+**Observação:** Foi utilizada a AMI **Amazon Linux 2023 (AL2023)** com instância **t3.micro**, ambos totalmente elegíveis para o Free Tier da AWS.
 
 👤 Autor
 José - Laboratório de Infraestrutura AWS
